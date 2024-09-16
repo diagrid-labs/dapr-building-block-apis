@@ -1,0 +1,11 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "2 - Service Invocation",
+  "nextTour": "3 - State Management",
+  "steps": [
+    {
+      "title": "Distributed apps",
+      "description": "![distributed systems](./images/slides/Slide.PNG)"
+    }
+  ]
+}

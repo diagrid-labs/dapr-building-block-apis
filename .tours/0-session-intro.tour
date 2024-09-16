@@ -1,11 +1,11 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
   "title": "0 - Session intro",
-  "nextTour": "1 - Failure",
+  "nextTour": "1 - Dapr intro",
   "steps": [
     {
       "title": "Title",
-      "description": "![opening1](./images/title.PNG)\r\n"
+      "description": "![opening1](./images/slides/Slide1.PNG)\r\n"
     },
     {
       "title": "Failure is inevitable",

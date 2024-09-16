@@ -1,0 +1,63 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "1 - Dapr intro",
+  "nextTour": "2 - Service Invocation",
+  "steps": [
+    {
+      "title": "Distributed apps",
+      "description": "![distributed systems](./images/distributed-apps1.PNG)"
+    },
+    {
+      "title": "Dapr OSS",
+      "description": "![dapr website](./images/dapr-website.png)\r\n\r\n[dapr.io](https://dapr.io)"
+    },
+    {
+      "title": "Distributed apps with Dapr",
+      "description": "![distributed systems](./images/distributed-apps2.PNG)"
+    },
+    {
+      "title": "Dapr APIs",
+      "description": "![Dapr dev to hosting](./images/slides/Slide12.PNG)"
+    },
+    {
+      "title": "Dapr components",
+      "description": "![components](./images/slides/Slide13.PNG)"
+    },
+    {
+      "title": "Dapr APIs example",
+      "description": "![components](./images/slides/Slide15.PNG)"
+    },
+    {
+      "title": "Swappable components local",
+      "description": "![Swappable components local dev](./images/slides/Slide16.PNG)"
+    },
+    {
+      "title": "Swappable components Azure",
+      "description": "![Swappable components Azure](./images/slides/Slide17.PNG)"
+    },
+    {
+      "title": "Swappable components AWS",
+      "description": "![Swappable components AWS](./images/slides/Slide18.PNG)"
+    },
+    {
+      "title": "Swappable components GCP",
+      "description": "![Swappable components GCP](./images/slides/Slide19.PNG)"
+    },
+    {
+      "title": "Swappable components K8s",
+      "description": "![Swappable components K8s](./images/slides/Slide20.PNG)"
+    },
+    {
+      "title": "Community",
+      "description": "![Dapr community](./images/slides/Slide22.PNG)"
+    },
+    {
+      "title": "Contributors",
+      "description": "![Dapr community](./images/slides/Slide23.PNG)"
+    },
+    {
+      "title": "End users",
+      "description": "![Dapr community](./images/slides/Slide24.PNG)"
+    }
+  ]
+}
