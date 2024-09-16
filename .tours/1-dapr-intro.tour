@@ -5,11 +5,27 @@
   "steps": [
     {
       "title": "Distributed apps",
-      "description": "![distributed systems](./images/distributed-apps1.PNG)"
+      "description": "![distributed systems](./images/slides/Slide3.PNG)"
+    },
+    {
+      "title": "Service orchestration",
+      "description": "![distributed systems](./images/slides/Slide4.PNG)"
+    },
+    {
+      "title": "Distributed tracing",
+      "description": "![distributed systems](./images/slides/Slide5.PNG)"
+    },
+    {
+      "title": "Access control",
+      "description": "![distributed systems](./images/slides/Slide6.PNG)"
+    },
+    {
+      "title": "Resiliency",
+      "description": "![distributed systems](./images/slides/Slide7.PNG)"
     },
     {
       "title": "Dapr OSS",
-      "description": "![dapr website](./images/dapr-website.png)\r\n\r\n[dapr.io](https://dapr.io)"
+      "description": "![dapr website](./images/slides/Slide8.png)\r\n\r\n[dapr.io](https://dapr.io)"
     },
     {
       "title": "Distributed apps with Dapr",
@@ -57,7 +73,7 @@
     },
     {
       "title": "End users",
-      "description": "![Dapr community](./images/slides/Slide24.PNG)"
+      "description": "![Dapr community](./images/slides/Slide24.PNG)\n\n[CNCF Case Studies](https://www.cncf.io/case-studies/?_sft_lf-project=dapr)"
     }
   ]
 }

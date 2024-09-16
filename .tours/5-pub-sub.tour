@@ -1,0 +1,27 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "5 - Pub/Sub",
+  "nextTour": "6 - Pub/Sub Demo",
+  "steps": [
+    {
+      "title": "Pub/Sub API",
+      "description": "![state management](./images/slides/Slide38.PNG)"
+    },
+    {
+      "title": "Pub/Sub Overview",
+      "description": "![state management](./images/slides/Slide39.PNG)"
+    },
+    {
+      "title": "Pub/Sub Diagram I",
+      "description": "![state management](./images/slides/Slide40.PNG)"
+    },
+    {
+      "title": "Pub/Sub Diagram II",
+      "description": "![state management](./images/slides/Slide41.PNG)"
+    },
+    {
+      "title": "Pub/Sub JavaScript",
+      "description": "![state management](./images/slides/Slide43.PNG)"
+    }
+  ]
+}

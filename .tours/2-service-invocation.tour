@@ -4,8 +4,24 @@
   "nextTour": "3 - State Management",
   "steps": [
     {
-      "title": "Distributed apps",
-      "description": "![distributed systems](./images/slides/Slide.PNG)"
+      "title": "Service Invocation API",
+      "description": "![service invocation](./images/slides/Slide26.PNG)"
+    },
+    {
+      "title": "Service Invocation Overview",
+      "description": "![service invocation](./images/slides/Slide27.PNG)"
+    },
+    {
+      "title": "Service Invocation Diagram I",
+      "description": "![service invocation](./images/slides/Slide28.PNG)"
+    },
+    {
+      "title": "Service Invocation Diagram II",
+      "description": "![service invocation](./images/slides/Slide29.PNG)"
+    },
+    {
+      "title": "Service Invocation JavaScript",
+      "description": "![service invocation](./images/slides/Slide30.PNG)"
     }
   ]
 }

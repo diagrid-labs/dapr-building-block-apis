@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "5 - Session close",
+  "title": "7 - Session close",
   "steps": [
     {
       "title": "Dapr OSS",

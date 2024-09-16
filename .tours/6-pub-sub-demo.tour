@@ -1,0 +1,54 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "6 - Pub/Sub Demo",
+  "nextTour": "7 - Session close",
+  "steps": [
+    {
+      "file": "BuildingBlockApisDemo/AppA/Program.cs",
+      "description": "## AppA Program.cs /pubsub",
+      "line": 17
+    },
+    {
+      "directory": "BuildingBlockApisDemo/Resources",
+      "description": "## Rename pubsub and subscription YAML files\n\n1. Navigate to the Resources folder.\n2. Rename `pubsub.yaml.temp` to `pubsub.yaml`.\n3. Rename `subscription.yaml.temp` to `subscription.yaml`."
+    },
+    {
+      "file": "BuildingBlockApisDemo/Resources/pubsub.yaml",
+      "description": "## Pubsub component",
+      "line": 1
+    },
+    {
+      "file": "BuildingBlockApisDemo/Resources/subscription.yaml",
+      "description": "## Subscription file\n\nThis is a declarative subscription to a topic. You can also use a programmatic way in code.",
+      "line": 1
+    },
+    {
+      "title": "Run AppA and AppB",
+      "description": "## Run AppA and AppB normally using the Dapr CLI. \n\n1. Ensure you're in the BuildingBlockApisDemo folder.\n2. Run AppA and AppB using the Dapr CLI with multi-app run:\n\n>> dapr run -f .\n\n3. Make a new request to AppA via the [`local.http`](./BuildingBlockApisDemo/local.http) file.\n   "
+    },
+    {
+      "file": "BuildingBlockApisDemo/local.http",
+      "description": "## Pubsub from AppA to AppB",
+      "line": 21,
+      "title": "local.http"
+    },
+    {
+      "title": "Resiliency pubsub",
+      "description": "![Inbound and outbound resiliency](./images/resiliency-pubsub.PNG)"
+    },
+    {
+      "title": "Run AppA and AppB with issue",
+      "description": "## Simulate an issue with the message broker\n\n1. Ensure you're in the ResilienceDemo folder.\n\n2. Run AppA and AppB using the Dapr CLI with multi-app run:\n\n>> dapr run -f .\n\n\n3. Open a new terminal and stop the `dapr_redis` container:\n\n`docker stop dapr_redis`\n\n4. Make a new request to AppA via the [`local.http`](./BuildingBlockApisDemo/local.http) file.\n   \n5. Wait a few seconds and start the `dapr_redis` container:\n\n`docker start dapr_redis`\n"
+    },
+    {
+      "file": "BuildingBlockApisDemo/local.http",
+      "description": "## Pubsub from AppA to AppB",
+      "line": 21,
+      "title": "local.http"
+    },
+    {
+      "title": "Conductor Advisories",
+      "description": "## Check production readiness with Conductor Free\r\n\r\n- [Conductor Free Dashboard](https://conductor.diagrid.io)\r\n\r\n![Conductor Advisories](./images/conductor1.png)\r\n\r\n- [Conductor Free Info](https://diagrid.ws/conductor)"
+    }
+  ]
+}

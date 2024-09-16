@@ -1,0 +1,27 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "3 - State Management",
+  "nextTour": "4 - Service Invocation Demo",
+  "steps": [
+    {
+      "title": "State Management API",
+      "description": "![state management](./images/slides/Slide32.PNG)"
+    },
+    {
+      "title": "State Management Overview",
+      "description": "![state management](./images/slides/Slide33.PNG)"
+    },
+    {
+      "title": "State Management POST",
+      "description": "![state management](./images/slides/Slide34.PNG)"
+    },
+    {
+      "title": "State Management GET",
+      "description": "![state management](./images/slides/Slide35.PNG)"
+    },
+    {
+      "title": "State Management JavaScript",
+      "description": "![state management](./images/slides/Slide36.PNG)"
+    }
+  ]
+}
