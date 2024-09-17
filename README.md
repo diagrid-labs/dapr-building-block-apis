@@ -19,7 +19,7 @@ This repo contains Dapr applications to demonstrate several Dapr building block 
 - [Service Invocation Demo CodeTour](#service-invocation-demo-codetour)
 - [Pub/Sub CodeTour](#pubsub-codetour)
 - [Pub/Sub Demo CodeTour](#pubsub-demo-codetour)
-- [Dapr Reliability Advisor in Conductor Free](#dapr-reliability-advisor-in-conductor-free)
+- [Diagrid Conductor Free](#diagrid-conductor-free)
 - [Resources](#resources)
 
 ## Prerequisites
@@ -101,14 +101,19 @@ graph LR
 
 Using the CodeTour panel in the VSCode explorer, start the *6 - Pub/Sub Demo* CodeTour and follow the instructions in the CodeTour to run the apps and use the Dapr Pub/Sub API.
 
-### Dapr Reliability Advisor in Conductor Free
+### Diagrid Conductor Free
 
 [Diagrid Conductor Free](https://www.diagrid.io/conductor) is a free tool developers can use to visualize, troubleshoot, and optimize Dapr workloads on Kubernetes. It includes an Advisor that provides recommendations on how to improve the reliability of your Dapr applications.
 
-![Conductor Advisor](./images/conductor1.png)
+![Conductor Advisor](./images/conductor-advisories.jpeg)
 
 ![Reliability details](./images/conductor2.png)
 
+Conductor Free also comes with two builders to generate Dapr *component files* and *resiliency policies* so you don't have to figure out the correct yaml schema yourself.
+
+![Conductor Component Builder](./images/conductor-component-builder.jpeg)
+
+![Conductor Resiliency Builder](./images/conductor-resiliency-builder.jpeg)
 
 ## Resources
 
