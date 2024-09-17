@@ -1,0 +1,19 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "7 - Diagrid Conductor",
+  "nextTour": "8 - Session close",
+  "steps": [
+    {
+      "title": "Conductor Advisories",
+      "description": "## Check production readiness with Conductor Free\r\n\r\n- [Conductor Free Dashboard](https://conductor.diagrid.io)\r\n\r\n![Conductor Advisories](./images/conductor-advisories.jpeg)\r\n\r\n- [Conductor Free Info](https://diagrid.ws/conductor)"
+    },
+    {
+      "title": "Conductor Component Builder",
+      "description": "## Conductor Component Builder\r\n\r\n- [Conductor Service](https://conductor.diagrid.io)\r\n\r\n![Conductor Component Builder](./images/conductor-component-builder.jpeg)\r\n\r\n- [Conductor Free Info](https://diagrid.ws/conductor)"
+    },
+    {
+      "title": "Conductor Resiliency Builder",
+      "description": "## Conductor Resiliency Builder\r\n\r\n- [Conductor Service](https://conductor.diagrid.io)\r\n\r\n![Conductor Resiliency Builder](./images/conductor-resiliency-builder.jpeg)\r\n\r\n- [Conductor Free Info](https://diagrid.ws/conductor)"
+    }
+  ]
+}

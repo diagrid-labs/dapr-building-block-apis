@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "7 - Session close",
+  "title": "8 - Session close",
   "steps": [
     {
       "title": "Dapr OSS",
@@ -8,7 +8,7 @@
     },
     {
       "title": "QR Codes",
-      "description": "![Diagrid QR codes](./images/diagrid-qr-codes.png)\r\n\r\n- [diagrid.ws/dapr-durable](https://diagrid.ws/dapr-durable)\r\n- [diagrid.ws/conductor](https://diagrid.ws/conductor)\r\n"
+      "description": "![GitHub repo](./images/github-repo-dapr-apis.png)\r\n\r\n- [diagrid.ws/gh-dapr-apis](https://diagrid.ws/gh-dapr-apis)\r\n"
     },
     {
       "title": "Claim Dapr badges",

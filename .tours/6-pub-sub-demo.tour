@@ -1,7 +1,7 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
   "title": "6 - Pub/Sub Demo",
-  "nextTour": "7 - Session close",
+  "nextTour": "7 - Diagrid Conductor",
   "steps": [
     {
       "file": "BuildingBlockApisDemo/AppA/Program.cs",
@@ -45,10 +45,6 @@
       "description": "## Pubsub from AppA to AppB",
       "line": 21,
       "title": "local.http"
-    },
-    {
-      "title": "Conductor Advisories",
-      "description": "## Check production readiness with Conductor Free\r\n\r\n- [Conductor Free Dashboard](https://conductor.diagrid.io)\r\n\r\n![Conductor Advisories](./images/conductor1.png)\r\n\r\n- [Conductor Free Info](https://diagrid.ws/conductor)"
     }
   ]
 }
