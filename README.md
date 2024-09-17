@@ -1,22 +1,25 @@
-# Dapr Resiliency and Durable Execution
+# Dapr Building Block APIs and Resiliency
 
-This repo contains Dapr applications to demonstrate Dapr resiliency policies and durable execution with Dapr workflow.
+This repo contains Dapr applications to demonstrate several Dapr building block APIs and the built-in resiliency capabilities.
 
 > Running the CodeTours in this repo is recommended since this gives more context about:
 >
-> - failure and distributed computing challenges
-> - the way Dapr provides resiliency
-> - what durable execution is
-> - how the Dapr Workflow implements durable execution
+> - The Dapr OSS project
+> - Service Invocation API
+> - State Management API
+> - Pub/Sub API
+> - Resiliency policies
 
 ## Table of Contents
 
 - [Prequisites](#prerequisites)
-- [Running the Dapr Resiliency CodeTour](#running-the-dapr-resiliency-codetour)
-- [ResiliencyDemo](#resiliencydemo)
+- [Dapr Intro CodeTour](#dapr-intro-codetour)
+- [Service Invocation CodeTour](#service-invocation-codetour)
+- [State Management CodeTour](#state-management-codetour)
+- [Service Invocation Demo CodeTour](#service-invocation-demo-codetour)
+- [Pub/Sub CodeTour](#pubsub-codetour)
+- [Pub/Sub Demo CodeTour](#pubsub-demo-codetour)
 - [Dapr Reliability Advisor in Conductor Free](#dapr-reliability-advisor-in-conductor-free)
-- [Running the Durable Execution & Workflow CodeTour](#running-the-durable-execution--workflow-codetour)
-- [WorkflowDemo](#workflowdemo)
 - [Resources](#resources)
 
 ## Prerequisites
@@ -32,17 +35,24 @@ Clone the [dapr-resiliency-and-durable-execution repo](https://github.com/diagri
 
 Open the cloned repo in VSCode and accept the suggested VSCode extensions.
 
-## Running the Dapr Resiliency CodeTour
+## Running the CodeTours
 
-Using the CodeTour panel in the VSCode explorer, start the *3 - Dapr Resiliency* CodeTour:
+### Dapr Intro CodeTour
 
-![CodeTour Failure & Resiliency](./images/codetour-dapr-resiliency.png)
+Using the CodeTour panel in the VSCode explorer, start the *1 - Dapr Intro* CodeTour.
 
-### ResiliencyDemo
+### Service Invocation CodeTour
 
-The ResiliencyDemo consists of two applications, AppA and AppB, and a state store.
+Using the CodeTour panel in the VSCode explorer, start the *2 - Service Invocation* CodeTour.
 
-Communication between AppA and AppB can be done using HTTP or Pub/Sub.
+### State Management CodeTour
+
+Using the CodeTour panel in the VSCode explorer, start the *3 - State Management* CodeTour.
+
+### Service Invocation Demo CodeTour
+
+Using the CodeTour panel in the VSCode explorer, start the *4 - Service Invocation Demo* CodeTour.
+The BuildingBlockApisDemo consists of two applications, AppA and AppB, and a state store. Follow the instructions in the CodeTour to run the apps and use the Dapr Service Invocation API.
 
 **Service invocation**
 
@@ -54,6 +64,28 @@ graph LR
     A --HTTP--> B
     B --> State
 ```
+
+### Running the BuildingBlockApisDemo apps locally
+
+1. Navigate to the BuildingBlockApisDemo folder in the terminal:
+
+    ```bash
+    cd BuildingBlockApisDemo
+    ```
+
+2. Run the BuildingBlockApisDemo apps using the Dapr CLI:
+
+    ```bash
+    dapr run -f .
+    ```
+
+3. Open the [local.http](./BuildingBlockApisDemo/local.http) file in the VSCode editor and execute the HTTP requests to the BuildingBlockApisDemo apps.
+
+### Pub.Sub CodeTour
+
+Using the CodeTour panel in the VSCode explorer, start the *5 - Pub/Sub* CodeTour.
+
+### Pub.Sub Demo CodeTour
 
 **Pub/sub**
 
@@ -67,21 +99,7 @@ graph LR
     B --> State
 ```
 
-### Running the ResiliencyDemo apps locally
-
-1. Navigate to the ResiliencyDemo folder in the terminal:
-
-    ```bash
-    cd ResiliencyDemo
-    ```
-
-2. Run the ResiliencyDemo apps using the Dapr CLI:
-
-    ```bash
-    dapr run -f .
-    ```
-
-3. Open the [local.http](./ResiliencyDemo/local.http) file in the VSCode editor and execute the HTTP requests to the ResiliencyDemo apps.
+Using the CodeTour panel in the VSCode explorer, start the *6 - Pub/Sub Demo* CodeTour and follow the instructions in the CodeTour to run the apps and use the Dapr Pub/Sub API.
 
 ### Dapr Reliability Advisor in Conductor Free
 
@@ -91,78 +109,11 @@ graph LR
 
 ![Reliability details](./images/conductor2.png)
 
-## Running the Durable Execution & Workflow CodeTour
-
-Using the CodeTour panel in the VSCode explorer, start the *4 - Durable Execution & Workflow* CodeTour:
-
-![CodeTour Durable Execution & Workflow](./images/codetour-durable-execution.png)
-
-### WorkflowDemo
-
-```mermaid
-graph LR
-    KV[(Inventory)]
-    WApp{{WorkflowApp}}
-    SApp{{ShippingApp}}
-    WApp --> SApp
-    WApp --> KV
-```
-
-```mermaid
-sequenceDiagram
-    actor U as User
-    participant DC as DaprClient
-    participant W as ValidateOrderWorkflow
-    participant UI as UpdateInventory
-    participant GSC as GetShippingCost
-    participant RS as RegisterShipment
-    participant UU as UndoUpdateInventory
-    participant KV as KV Store
-    U ->> DC: ScheduleNewWorkflowAsync
-    DC ->> W: Schedules instance
-    DC -->> U: Accepted
-    W ->> UI: CallActivity
-    UI ->> KV: GetState
-    KV -->> UI: Response
-    UI ->> KV: SaveState
-    UI -->> W: Response
-    alt IsSuffientStock
-        loop All Shipper Services
-            W ->> GSC: CallActivity
-            GSC -->> W: Response
-        end
-        W ->> W: GetCheapestShipper
-        W ->> RS: CallActivity
-        RS -->> W: Response
-        alt Exception from RegisterShipment
-            W ->> UU: CallActivity
-            UU ->> KV: GetState
-            UU ->> KV: UpdateState
-            UU ->> W: Response
-        end
-    end
-```
-
-
-### Running the WorkflowDemo locally
-
-1. Navigate to the WorkflowDemo folder in the terminal:
-
-    ```bash
-    cd WorkflowDemo
-    ```
-
-2. Run the WorkflowDemo apps using the Dapr CLI:
-
-    ```bash
-    dapr run -f .
-    ```
-
-3. Open the [local.http](./WorkflowDemo/local.http) file in the VSCode editor and execute the HTTP requests to the WorkflowDemo apps.
 
 ## Resources
 
-- [Diagrid blog: An in-depth guide to Dapr workflow patterns in .NET](https://www.diagrid.io/blog/in-depth-guide-to-dapr-workflow-patterns)
-- [Diagrid Conductor Free](https://www.diagrid.io/conductor)
-- [Dapr Docs: Workflow](https://docs.dapr.io/developing-applications/building-blocks/workflow/workflow-overview/)
+- [Dapr Docs: Service Invocation](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/)
+- [Dapr Docs: State Management](https://docs.dapr.io/developing-applications/building-blocks/state-management/)
+- [Dapr Docs: Pub/Sub](https://docs.dapr.io/developing-applications/building-blocks/pubsub/)
 - [Dapr Docs: Resiliency](https://docs.dapr.io/operations/resiliency/)
+- [Diagrid Conductor Free](https://www.diagrid.io/conductor)
