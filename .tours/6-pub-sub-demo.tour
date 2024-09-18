@@ -10,7 +10,7 @@
     },
     {
       "directory": "BuildingBlockApisDemo/Resources",
-      "description": "## Rename pubsub and subscription YAML files\n\n1. Navigate to the Resources folder.\n2. Rename `pubsub.yaml.temp` to `pubsub.yaml`.\n3. Rename `subscription.yaml.temp` to `subscription.yaml`."
+      "description": "## Rename pubsub and subscription YAML files\n\n1. Navigate to the Resources folder.\n2. Enable the pubsub component file by renaming `pubsub.yaml.temp` to `pubsub.yaml`.\n\n>> mv ./Resources/pubsub.yaml.temp ./Resources/pubsub.yaml\n\n3. Enable the declarative subscription by renaming `subscription.yaml.temp` to `subscription.yaml`.\n\n>> mv ./Resources/subscription.yaml.temp ./Resources/subscription.yaml"
     },
     {
       "file": "BuildingBlockApisDemo/Resources/pubsub.yaml",
