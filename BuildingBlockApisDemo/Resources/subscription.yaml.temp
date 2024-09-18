@@ -3,9 +3,9 @@ kind: Subscription
 metadata:
   name: profile-sub
 spec:
+  pubsubname: mypubsub
   topic: profiles
   routes:
     default: /profile
-  pubsubname: mypubsub
 scopes:
 - app-b
