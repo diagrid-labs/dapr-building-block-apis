@@ -1,0 +1,11 @@
+version: 1
+common:
+  resourcesPath: Resources
+  appLogDestination: console
+  daprdLogDestination: console
+apps:
+  - appID: profile-service
+    appDirPath: ProfileService
+    appPort: 5049
+    daprHTTPPort: 3504
+    command: ["dotnet", "run"]
