@@ -1,7 +1,9 @@
 {
-    "recommendations": [
-        "humao.rest-client",
-        "vsls-contrib.codetour",
-        "ms-dotnettools.csharp"
-    ]
+  "recommendations": [
+    "humao.rest-client",
+    "ms-dotnettools.csharp",
+    "ritwickdey.LiveServer",
+    "cweijan.vscode-database-client2",
+    "eliostruyf.vscode-demo-time"
+  ]
 }

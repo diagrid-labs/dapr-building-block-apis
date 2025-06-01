@@ -1,0 +1,446 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "Demo",
+  "description": "",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Intro",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/intro.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "What if",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/what-if.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Demo 1: SaveState",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+         {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo1"
+        },
+        {
+          "action": "highlight",
+          "path": "/Demo1/ProfileService/Program.cs",
+          "position": 14
+        }
+      ]
+    },
+    {
+      "title": "Demo 1a: Run",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f ."
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Demo 1 has been started (dapr run -f .)"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1a: Call endpoints",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo1/demo1.http",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "title": "Demo 1a: Stop",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "\u0003"
+          }
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Demo 1 has been stopped (CTRL+C)"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1b: Switch state store",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "rename",
+          "path": "/Demo1/Resources/statestore-redis.yaml",
+          "dest": "/Demo1/Resources/statestore-redis.yaml.temp"
+        },
+        {
+          "action": "rename",
+          "path": "/Demo1/Resources/statestore-postgres.yaml.temp",
+          "dest": "/Demo1/Resources/statestore-postgres.yaml"
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Switched to Postgres"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1b: Run",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f ."
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Demo 1 has been started (dapr run -f .)"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1b: Call endpoints",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo1/demo1.http",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "title": "Demo 1b: Stop",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "\u0003"
+          }
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Demo 1 has been stopped (CTRL+C)"
+        }
+      ]
+    },
+    {
+      "title": "Bio",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/bio.md"
+        }
+      ]
+    },
+    {
+      "title": "Dapr website",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/website.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Swappable Components Local",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-local.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Swappable Components Azure",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-azure.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Swappable Components AWS",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-aws.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Swappable Components GCP",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-gcp.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Developer Platform",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dev-platform.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "State Management",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/state-management.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+
+    {
+      "title": "Service Invocation",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/service-invocation.md"
+        }
+      ]
+    },
+    {
+      "title": "Service Invocation Overview",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/service-invocation-1.md"
+        }
+      ]
+    },
+    {
+      "title": "Service Invocation Diagram 1",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/service-invocation-2.md"
+        }
+      ]
+    },
+    {
+      "title": "Service Invocation Diagram 2",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/service-invocation-3.md"
+        }
+      ]
+    },
+    {
+      "title": "Pub/Sub",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/pub-sub.md"
+        }
+      ]
+    },
+    {
+      "title": "Pub/Sub Overview",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/pub-sub-1.md"
+        }
+      ]
+    },
+    {
+      "title": "Pub/Sub Diagram 1",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/pub-sub-2.md"
+        }
+      ]
+    },
+    {
+      "title": "Pub/Sub Diagram 2",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/pub-sub-3.md"
+        }
+      ]
+    },
+    {
+      "title": "Closing",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/closing.md"
+        }
+      ]
+    }
+  ]
+}

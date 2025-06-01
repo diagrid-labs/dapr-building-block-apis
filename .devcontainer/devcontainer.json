@@ -15,9 +15,9 @@
 			"extensions": [
 				"ms-dotnettools.csharp",
 				"humao.rest-client",
-				"vsls-contrib.codetour",
+				"eliostruyf.vscode-demo-time",
 				"ritwickdey.LiveServer",
-				"cweijan.vscode-redis-client"
+				"cweijan.vscode-database-client2"
 			]
 		}
 	},
