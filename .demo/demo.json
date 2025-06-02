@@ -989,7 +989,57 @@
       ]
     },
     {
-      "title": "Closing",
+      "title": "Dapr Recap",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dev-platform.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Find Dapr Online",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dapr-online.md"
+        }
+      ]
+    },
+    {
+      "title": "Dapr University",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dapr-university.md"
+        }
+      ]
+    },
+    {
+      "title": "Collect the Community Badge",
       "description": "",
       "icons": {
         "start": "vm",
@@ -1006,7 +1056,7 @@
         },
         {
           "action": "openSlide",
-          "path": "/.demo/slides/closing.md"
+          "path": "/.demo/slides/community-badge.md"
         }
       ]
     }
