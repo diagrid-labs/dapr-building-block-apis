@@ -43,11 +43,11 @@
     {
       "title": "Demo 1: SaveState",
       "icons": {
-        "start": "vm",
+        "start": "code",
         "end": "pass-filled"
       },
       "steps": [
-         {
+        {
           "action": "executeVSCodeCommand",
           "command": "workbench.action.focusSideBar"
         },
@@ -182,6 +182,10 @@
           }
         },
         {
+          "action": "executeTerminalCommand",
+          "command": "cd .."
+        },
+        {
           "action": "showInfoMessage",
           "message": "Demo 1 has been stopped (CTRL+C)"
         }
@@ -296,18 +300,242 @@
     {
       "title": "State Management",
       "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
       "steps": [
         {
           "action": "openSlide",
           "path": "/.demo/slides/state-management.md"
         }
-      ],
+      ]
+    },
+    {
+      "title": "State Management Overview",
+      "description": "",
       "icons": {
         "start": "vm",
         "end": "pass-filled"
-      }
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/state-management-1.md"
+        }
+      ]
     },
-
+    {
+      "title": "State Management Diagram 1",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/state-management-2.md"
+        }
+      ]
+    },
+    {
+      "title": "State Management Diagram 2",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/state-management-3.md"
+        }
+      ]
+    },
+    {
+      "title": "dapr.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "open",
+          "path": "/Demo1/dapr.yaml"
+        }
+      ]
+    },
+    {
+      "title": "statestore.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "open",
+          "path": "/Demo1/Resources/statestore-postgres.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Resiliency",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo2",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "highlight",
+          "path": "/Demo2/ProfileService/Program.cs",
+          "position": 14
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Run",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Demo 2 has been started (dapr run -f .)"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: List Containers",
+      "description": "",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker ps --format '{{.Names}} {{.Status}}'",
+          "terminalId": "docker"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Stop Redis Container",
+      "description": "",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker stop dapr_redis",
+          "terminalId": "docker"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Call endpoint",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo2/demo2.http",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Check dapr log",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+         {
+          "action": "executeTerminalCommand",
+          "command": " ",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Start Redis Container",
+      "description": "",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker start dapr_redis",
+          "terminalId": "docker"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Check dapr log",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+         {
+          "action": "executeTerminalCommand",
+          "command": " ",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Stop",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+         {
+          "action": "executeTerminalCommand",
+          "command": " ",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "\u0003"
+          }
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Demo 2 has been stopped (CTRL+C)"
+        }
+      ]
+    },
     {
       "title": "Service Invocation",
       "description": "",
@@ -317,25 +545,20 @@
       },
       "steps": [
         {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
           "action": "openSlide",
           "path": "/.demo/slides/service-invocation.md"
         }
       ]
     },
-    {
-      "title": "Service Invocation Overview",
-      "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/service-invocation-1.md"
-        }
-      ]
-    },
+    
     {
       "title": "Service Invocation Diagram 1",
       "description": "",
@@ -372,6 +595,14 @@
         "end": "pass-filled"
       },
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
         {
           "action": "openSlide",
           "path": "/.demo/slides/pub-sub.md"

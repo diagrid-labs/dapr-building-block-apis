@@ -1,4 +1,4 @@
-@profile-service-url=http://localhost:5047
+@profile-service-url=http://localhost:5049
 @id={{$guid}}
 
 ### POST SocialProfileDetails
