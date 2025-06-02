@@ -1,0 +1,31 @@
+@validation-url=http://localhost:5051
+@profile-url=http://localhost:5053
+@id={{$guid}}
+
+### POST valid SocialProfileDetails
+# @name validationResponse
+POST {{validation-url}}/validate
+Content-Type: application/json
+
+{
+    "id" : "{{id}}",
+    "name": "Dapr",
+    "discord": "https://bit.ly/dapr-discord",
+    "bluesky": "https://bsky.app/profile/daprdev.bsky.social",
+    "linkedin": "https://www.linkedin.com/company/daprdev"
+}
+
+### POST invalid SocialProfileDetails
+POST {{validation-url}}/validate
+Content-Type: application/json
+
+{
+    "name": "Dapr",
+    "discord": "https://bit.ly/dapr-discord",
+    "bluesky": "https://bsky.app/profile/daprdev.bsky.social",
+    "linkedin": "https://www.linkedin.com/company/daprdev"
+}
+
+### GET SocialProfileDetails
+@get-url=http://{{validationResponse.response.headers.Location}}
+GET {{get-url}}

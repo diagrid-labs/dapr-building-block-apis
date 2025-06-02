@@ -4,8 +4,13 @@ common:
   appLogDestination: console
   daprdLogDestination: console
 apps:
+  - appID: validation
+    appDirPath: ValidationService
+    appPort: 5051
+    daprHTTPPort: 3551
+    command: ["dotnet", "run"]
   - appID: profile
     appDirPath: ProfileService
-    appPort: 5047
-    daprHTTPPort: 3547
+    appPort: 5053
+    daprHTTPPort: 3553
     command: ["dotnet", "run"]

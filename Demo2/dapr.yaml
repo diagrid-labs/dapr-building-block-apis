@@ -4,8 +4,8 @@ common:
   appLogDestination: console
   daprdLogDestination: console
 apps:
-  - appID: profile-service
+  - appID: profile
     appDirPath: ProfileService
     appPort: 5049
-    daprHTTPPort: 3504
+    daprHTTPPort: 3549
     command: ["dotnet", "run"]
