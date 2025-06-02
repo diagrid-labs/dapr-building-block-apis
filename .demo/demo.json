@@ -53,12 +53,27 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd Demo1"
+          "command": "cd Demo1",
+          "terminalId": "dapr-run"
         },
         {
           "action": "highlight",
           "path": "/Demo1/ProfileService/Program.cs",
           "position": 14
+        }
+      ]
+    },
+    {
+      "title": "Demo 1a: Build",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ProfileService",
+          "terminalId": "dapr-run"
         }
       ]
     },
@@ -71,7 +86,8 @@
       "steps": [
         {
           "action": "executeTerminalCommand",
-          "command": "dapr run -f ."
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
         },
         {
           "action": "showInfoMessage",
@@ -145,7 +161,8 @@
       "steps": [
         {
           "action": "executeTerminalCommand",
-          "command": "dapr run -f ."
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
         },
         {
           "action": "showInfoMessage",
@@ -183,7 +200,8 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd .."
+          "command": "cd ..",
+          "terminalId": "dapr-run"
         },
         {
           "action": "showInfoMessage",
@@ -407,6 +425,20 @@
       ]
     },
     {
+      "title": "Demo 2: Build",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ProfileService",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
       "title": "Demo 2: Run",
       "icons": {
         "start": "terminal-cmd",
@@ -531,6 +563,11 @@
           }
         },
         {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run"
+        },
+        {
           "action": "showInfoMessage",
           "message": "Demo 2 has been stopped (CTRL+C)"
         }
@@ -558,7 +595,6 @@
         }
       ]
     },
-    
     {
       "title": "Service Invocation Diagram 1",
       "description": "",
@@ -584,6 +620,137 @@
         {
           "action": "openSlide",
           "path": "/.demo/slides/service-invocation-3.md"
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: dapr.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo3",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "open",
+          "path": "/Demo3/dapr.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: ValidationService",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo3/ValidationService/Program.cs",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: ProfileService",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo3/ProfileService/Program.cs",
+          "position": 9
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: Build",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ValidationService",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ProfileService",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: Run",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Demo 3 has been started (dapr run -f .)"
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: Call endpoints",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo3/demo3.http",
+          "position": 7
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: Stop",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+         {
+          "action": "executeTerminalCommand",
+          "command": " ",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "\u0003"
+          }
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Demo 3 has been stopped (CTRL+C)"
         }
       ]
     },
@@ -648,6 +815,176 @@
         {
           "action": "openSlide",
           "path": "/.demo/slides/pub-sub-3.md"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: dapr.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo4",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "open",
+          "path": "/Demo4/dapr.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: pubsub.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "open",
+          "path": "/Demo4/Resources/pubsub.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: subscription.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "open",
+          "path": "/Demo4/Resources/subscription.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: ValidationService",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo4/ValidationService/Program.cs",
+          "position": 10
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: ProfileService",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo4/ProfileService/Program.cs",
+          "position": 9
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: Build",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ValidationService",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ProfileService",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: Run",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Demo 4 has been started (dapr run -f .)"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: Call endpoints",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo4/demo4.http",
+          "position": 7
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: Stop",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+         {
+          "action": "executeTerminalCommand",
+          "command": " ",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "\u0003"
+          }
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Demo 4 has been stopped (CTRL+C)"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: View Traces",
+      "icons": {
+        "start": "globe",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openWebsite",
+          "url": "http://localhost:9411/zipkin/"
         }
       ]
     },

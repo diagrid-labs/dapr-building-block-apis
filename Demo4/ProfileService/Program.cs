@@ -32,4 +32,4 @@ app.MapGet("/profile/{id}", async (
 
 app.Run();
 
-record SocialProfileDetails(string Id, string Name, string TwitterHandle, string GitHubHandle);
+record SocialProfileDetails(string Id, string Name, string Discord, string Bluesky, string Linkedin);

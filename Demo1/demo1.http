@@ -1,9 +1,9 @@
-@profile-service-url=http://localhost:5047
+@profile-url=http://localhost:5047
 @id={{$guid}}
 
 ### POST SocialProfileDetails
 # @name postProfileDetails
-POST {{profile-service-url}}/profile
+POST {{profile-url}}/profile
 Content-Type: application/json
 
 {
