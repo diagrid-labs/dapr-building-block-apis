@@ -1054,6 +1054,20 @@
       ]
     },
     {
+      "title": "GitHub repo",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/gh-repo.md"
+        }
+      ]
+    },
+    {
       "title": "Collect the Community Badge",
       "description": "",
       "icons": {
