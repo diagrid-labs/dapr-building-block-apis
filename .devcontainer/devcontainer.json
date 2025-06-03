@@ -1,13 +1,12 @@
 {
 	"name": ".NET DevContainer",
-	"image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:1-9.0-bookworm",
 	"features": {
-		"ghcr.io/dapr/cli/dapr-cli:0": {},
 		"ghcr.io/devcontainers/features/docker-in-docker": {},
 		"ghcr.io/devcontainers/features/node:1": {}
 	},
 
-	"forwardPorts": [3500, 5045, 3502, 5047],
+	"forwardPorts": [5432, 9411, 5047, 3547, 5049, 3549, 5051, 3551, 5053, 3553, 5055, 3555, 5057, 3557],
 	"postCreateCommand": "bash .devcontainer/install.sh",
 	
 	"customizations": {

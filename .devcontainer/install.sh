@@ -1,4 +1,7 @@
+wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh -O - | /bin/bash
 dapr uninstall
 dapr init
-dotnet build ./BuildingBlockApisDemo/AppA/AppA.csproj
-dotnet build ./BuildingBlockApisDemo/AppB/AppB.csproj
+
+#docker pull postgres:latest
+#docker rm --force /postgres
+#docker run --name postgres -e POSTGRES_PASSWORD=postgres123 -d postgres -p 5432:5432
