@@ -1,7 +1,7 @@
 {
   "$schema": "https://demotime.elio.dev/demo-time.schema.json",
-  "title": "Demo",
-  "description": "",
+  "title": "Dapr APIs",
+  "description": "This presentation covers three Dapr APIs: State Management, Service Invocation, and Pub/Sub.",
   "version": 2,
   "demos": [
     {
@@ -234,86 +234,128 @@
     {
       "title": "Dapr website",
       "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
       "steps": [
         {
           "action": "openSlide",
           "path": "/.demo/slides/website.md"
         }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Swappable Components Local",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/swappable-components-local.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Swappable Components Azure",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/swappable-components-azure.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Swappable Components AWS",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/swappable-components-aws.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Swappable Components GCP",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/swappable-components-gcp.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
+      ]
     },
     {
       "title": "Developer Platform",
       "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
       "steps": [
         {
           "action": "openSlide",
           "path": "/.demo/slides/dev-platform.md"
         }
-      ],
+      ]
+    },
+    {
+      "title": "Swappable Components Local",
+      "description": "",
+       "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-local.md"
+        }
+      ]
+    },
+    {
+      "title": "Swappable Components Azure",
+      "description": "",
       "icons": {
         "start": "vm",
         "end": "pass-filled"
-      }
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-azure.md"
+        }
+      ]
+    },
+    {
+      "title": "Swappable Components AWS",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-aws.md"
+        }
+      ]
+    },
+    {
+      "title": "Swappable Components GCP",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-gcp.md"
+        }
+      ]
+    },
+    {
+      "title": "Dapr Community",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dapr-community.md"
+        }
+      ]
+    },
+    {
+      "title": "Dapr Contributors",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dapr-contributors.md"
+        }
+      ]
+    },
+    {
+      "title": "Dapr Users",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dapr-users.md"
+        }
+      ]
     },
     {
       "title": "State Management",
@@ -344,7 +386,7 @@
       ]
     },
     {
-      "title": "State Management Diagram 1",
+      "title": "State Management Diagram",
       "description": "",
       "icons": {
         "start": "vm",
@@ -354,20 +396,6 @@
         {
           "action": "openSlide",
           "path": "/.demo/slides/state-management-2.md"
-        }
-      ]
-    },
-    {
-      "title": "State Management Diagram 2",
-      "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/state-management-3.md"
         }
       ]
     },
@@ -507,7 +535,7 @@
         "end": "pass-filled"
       },
       "steps": [
-         {
+        {
           "action": "executeTerminalCommand",
           "command": " ",
           "terminalId": "dapr-run"
@@ -536,7 +564,7 @@
         "end": "pass-filled"
       },
       "steps": [
-         {
+        {
           "action": "executeTerminalCommand",
           "command": " ",
           "terminalId": "dapr-run"
@@ -550,7 +578,7 @@
         "end": "pass-filled"
       },
       "steps": [
-         {
+        {
           "action": "executeTerminalCommand",
           "command": " ",
           "terminalId": "dapr-run"
@@ -731,7 +759,7 @@
         "end": "pass-filled"
       },
       "steps": [
-         {
+        {
           "action": "executeTerminalCommand",
           "command": " ",
           "terminalId": "dapr-run"
@@ -952,7 +980,7 @@
         "end": "pass-filled"
       },
       "steps": [
-         {
+        {
           "action": "executeTerminalCommand",
           "command": " ",
           "terminalId": "dapr-run"
@@ -972,19 +1000,6 @@
         {
           "action": "showInfoMessage",
           "message": "Demo 4 has been stopped (CTRL+C)"
-        }
-      ]
-    },
-    {
-      "title": "Demo 4: View Traces",
-      "icons": {
-        "start": "globe",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "openWebsite",
-          "url": "http://localhost:9411/zipkin/"
         }
       ]
     },
