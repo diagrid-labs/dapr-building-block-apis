@@ -59,15 +59,13 @@ Progress through the slides and demos by clicking the DEMO TIME icon in the stat
 
 [Diagrid Conductor Free](https://www.diagrid.io/conductor) is a free tool developers can use to visualize, troubleshoot, and optimize Dapr workloads on Kubernetes. It includes an Advisor that provides recommendations on how to improve the reliability of your Dapr applications.
 
-![Conductor Advisor](./images/conductor-advisories.jpeg)
-
-![Reliability details](./images/conductor2.png)
+![Conductor Advisor](.demo/slides/images/conductor-advisories.jpeg)
 
 Conductor Free also comes with two builders to generate Dapr *component files* and *resiliency policies* so you don't have to figure out the correct yaml schema yourself.
 
-![Conductor Component Builder](./images/conductor-component-builder.jpeg)
+![Conductor Component Builder](.demo/slides/images/conductor-component-builder.jpeg)
 
-![Conductor Resiliency Builder](./images/conductor-resiliency-builder.jpeg)
+![Conductor Resiliency Builder](.demo/slides/images/conductor-resiliency-builder.jpeg)
 
 ## Resources
 
