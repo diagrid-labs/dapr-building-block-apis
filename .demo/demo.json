@@ -59,7 +59,7 @@
         {
           "action": "highlight",
           "path": "/Demo1/ProfileService/Program.cs",
-          "position": 14
+          "position": 13
         }
       ]
     },
@@ -88,10 +88,6 @@
           "action": "executeTerminalCommand",
           "command": "dapr run -f .",
           "terminalId": "dapr-run"
-        },
-        {
-          "action": "showInfoMessage",
-          "message": "Demo 1 has been started (dapr run -f .)"
         }
       ]
     },
@@ -122,10 +118,6 @@
           "args": {
             "text": "\u0003"
           }
-        },
-        {
-          "action": "showInfoMessage",
-          "message": "Demo 1 has been stopped (CTRL+C)"
         }
       ]
     },
@@ -163,10 +155,6 @@
           "action": "executeTerminalCommand",
           "command": "dapr run -f .",
           "terminalId": "dapr-run"
-        },
-        {
-          "action": "showInfoMessage",
-          "message": "Demo 1 has been started (dapr run -f .)"
         }
       ]
     },
@@ -202,10 +190,6 @@
           "action": "executeTerminalCommand",
           "command": "cd ..",
           "terminalId": "dapr-run"
-        },
-        {
-          "action": "showInfoMessage",
-          "message": "Demo 1 has been stopped (CTRL+C)"
         }
       ]
     },
@@ -477,10 +461,6 @@
           "action": "executeTerminalCommand",
           "command": "dapr run -f .",
           "terminalId": "dapr-run"
-        },
-        {
-          "action": "showInfoMessage",
-          "message": "Demo 2 has been started (dapr run -f .)"
         }
       ]
     },
@@ -594,10 +574,6 @@
           "action": "executeTerminalCommand",
           "command": "cd ..",
           "terminalId": "dapr-run"
-        },
-        {
-          "action": "showInfoMessage",
-          "message": "Demo 2 has been stopped (CTRL+C)"
         }
       ]
     },
@@ -731,10 +707,6 @@
           "action": "executeTerminalCommand",
           "command": "dapr run -f .",
           "terminalId": "dapr-run"
-        },
-        {
-          "action": "showInfoMessage",
-          "message": "Demo 3 has been started (dapr run -f .)"
         }
       ]
     },
@@ -775,10 +747,6 @@
           "action": "executeTerminalCommand",
           "command": "cd ..",
           "terminalId": "dapr-run"
-        },
-        {
-          "action": "showInfoMessage",
-          "message": "Demo 3 has been stopped (CTRL+C)"
         }
       ]
     },
@@ -952,10 +920,6 @@
           "action": "executeTerminalCommand",
           "command": "dapr run -f .",
           "terminalId": "dapr-run"
-        },
-        {
-          "action": "showInfoMessage",
-          "message": "Demo 4 has been started (dapr run -f .)"
         }
       ]
     },
@@ -996,10 +960,6 @@
           "action": "executeTerminalCommand",
           "command": "cd ..",
           "terminalId": "dapr-run"
-        },
-        {
-          "action": "showInfoMessage",
-          "message": "Demo 4 has been stopped (CTRL+C)"
         }
       ]
     },
