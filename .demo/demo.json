@@ -7,6 +7,10 @@
     {
       "title": "Intro",
       "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
       "steps": [
         {
           "action": "executeVSCodeCommand",
@@ -20,25 +24,35 @@
           "action": "openSlide",
           "path": "/.demo/slides/intro.md"
         }
-      ],
+      ]
+    },
+    {
+      "title": "Slido Q&A",
+      "description": "",
       "icons": {
         "start": "vm",
         "end": "pass-filled"
-      }
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/slido.md"
+        }
+      ]
     },
     {
       "title": "What if",
       "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
       "steps": [
         {
           "action": "openSlide",
           "path": "/.demo/slides/what-if.md"
         }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
+      ]
     },
     {
       "title": "Demo 1: SaveState",
@@ -190,6 +204,16 @@
           "action": "executeTerminalCommand",
           "command": "cd ..",
           "terminalId": "dapr-run"
+        },
+        {
+          "action": "rename",
+          "path": "/Demo1/Resources/statestore-redis.yaml.temp",
+          "dest": "/Demo1/Resources/statestore-redis.yaml"
+        },
+        {
+          "action": "rename",
+          "path": "/Demo1/Resources/statestore-postgres.yaml",
+          "dest": "/Demo1/Resources/statestore-postgres.yaml.temp"
         }
       ]
     },
@@ -246,7 +270,7 @@
     {
       "title": "Swappable Components Local",
       "description": "",
-       "icons": {
+      "icons": {
         "start": "vm",
         "end": "pass-filled"
       },
