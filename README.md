@@ -2,24 +2,19 @@
 
 This repo contains Dapr applications to demonstrate several Dapr building block APIs and the built-in resiliency capabilities.
 
-> Running the CodeTours in this repo is recommended since this gives more context about:
+> Running the DemoTime demos in this repo is recommended since this gives more context about:
 >
 > - The Dapr OSS project
-> - Service Invocation API
 > - State Management API
+> - Service Invocation API
 > - Pub/Sub API
 > - Resiliency policies
 
 ## Table of Contents
 
 - [Prequisites](#prerequisites)
-- [Dapr Intro CodeTour](#dapr-intro-codetour)
-- [Service Invocation CodeTour](#service-invocation-codetour)
-- [State Management CodeTour](#state-management-codetour)
-- [Service Invocation Demo CodeTour](#service-invocation-demo-codetour)
-- [Pub/Sub CodeTour](#pubsub-codetour)
-- [Pub/Sub Demo CodeTour](#pubsub-demo-codetour)
-- [Diagrid Conductor Free](#diagrid-conductor-free)
+- [Running the demos with DemoTime](#running-the-demos-with-demotime)
+- [Diagrid Conductor](#diagrid-conductor)
 - [Resources](#resources)
 
 ## Prerequisites
@@ -55,13 +50,13 @@ Progress through the slides and demos by clicking the DEMO TIME icon in the stat
 **Demo 4**
 ![Pub/Sub](/.demo/slides/images/dapr-pubsub-3.png)
 
-### Diagrid Conductor Free
+### Diagrid Conductor
 
-[Diagrid Conductor Free](https://www.diagrid.io/conductor) is a free tool developers can use to visualize, troubleshoot, and optimize Dapr workloads on Kubernetes. It includes an Advisor that provides recommendations on how to improve the reliability of your Dapr applications.
+[Diagrid Conductor](https://www.diagrid.io/conductor) is a free tool developers can use to visualize, troubleshoot, and optimize Dapr workloads on Kubernetes. It includes an Advisor that provides recommendations on how to improve the reliability of your Dapr applications.
 
 ![Conductor Advisor](.demo/slides/images/conductor-advisories.jpeg)
 
-Conductor Free also comes with two builders to generate Dapr *component files* and *resiliency policies* so you don't have to figure out the correct yaml schema yourself.
+Conductor also comes with two builders to generate Dapr *component files* and *resiliency policies* so you don't have to figure out the correct yaml schema yourself.
 
 ![Conductor Component Builder](.demo/slides/images/conductor-component-builder.jpeg)
 
@@ -69,8 +64,9 @@ Conductor Free also comes with two builders to generate Dapr *component files* a
 
 ## Resources
 
+- [Learn Dapr with Dapr University](https://diagrid.io/dapr-university/)
 - [Dapr Docs: Service Invocation](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/)
 - [Dapr Docs: State Management](https://docs.dapr.io/developing-applications/building-blocks/state-management/)
 - [Dapr Docs: Pub/Sub](https://docs.dapr.io/developing-applications/building-blocks/pubsub/)
 - [Dapr Docs: Resiliency](https://docs.dapr.io/operations/resiliency/)
-- [Diagrid Conductor Free](https://www.diagrid.io/conductor)
+- [Diagrid Conductor](https://www.diagrid.io/conductor)
