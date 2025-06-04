@@ -1,4 +1,4 @@
-# Dapr Building Block APIs and Resiliency
+# Dapr Building Block APIs
 
 This repo contains Dapr applications to demonstrate several Dapr building block APIs and the built-in resiliency capabilities.
 
@@ -29,77 +29,31 @@ Ensure you have these installed on your machine:
 - [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-- [VSCode](https://code.visualstudio.com/) - Although other IDEs can be used to view the code, some VSCode specific extensions are used (such as [CodeTour](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour)) to help guide you through the codebase.
-
-Clone the [dapr-resiliency-and-durable-execution repo](https://github.com/diagrid-labs/dapr-resiliency-and-durable-execution) to your local machine.
-
-Open the cloned repo in VSCode and accept the suggested VSCode extensions.
-
-## Running the CodeTours
-
-### Dapr Intro CodeTour
-
-Using the CodeTour panel in the VSCode explorer, start the *1 - Dapr Intro* CodeTour.
-
-### Service Invocation CodeTour
-
-Using the CodeTour panel in the VSCode explorer, start the *2 - Service Invocation* CodeTour.
-
-### State Management CodeTour
-
-Using the CodeTour panel in the VSCode explorer, start the *3 - State Management* CodeTour.
-
-### Service Invocation Demo CodeTour
-
-Using the CodeTour panel in the VSCode explorer, start the *4 - Service Invocation Demo* CodeTour.
-The BuildingBlockApisDemo consists of two applications, AppA and AppB, and a state store. Follow the instructions in the CodeTour to run the apps and use the Dapr Service Invocation API.
-
-**Service invocation**
-
-```mermaid
-graph LR
-    A{{AppA}}
-    B{{AppB}}
-    State[(KV Store)]
-    A --HTTP--> B
-    B --> State
-```
-
-### Running the BuildingBlockApisDemo apps locally
-
-1. Navigate to the BuildingBlockApisDemo folder in the terminal:
+- [VSCode](https://code.visualstudio.com/) - Although other IDEs can be used to view the code, some VSCode specific extensions are used (such as [DemoTime](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-demo-time)) to help guide you through the slides and the codebase.
+- For *Demo 1b* a Postgres database is required that can be installed via docker:
 
     ```bash
-    cd BuildingBlockApisDemo
+    docker pull postgres:latest
+    docker run --name postgres -e POSTGRES_PASSWORD=postgres123 -d postgres -p 5432:5432 
     ```
 
-2. Run the BuildingBlockApisDemo apps using the Dapr CLI:
+1. Clone the this repo to your local machine.
+2. Open the cloned repo in VSCode and accept the suggested VSCode extensions.
 
-    ```bash
-    dapr run -f .
-    ```
+## Running the demos with DemoTime
 
-3. Open the [local.http](./BuildingBlockApisDemo/local.http) file in the VSCode editor and execute the HTTP requests to the BuildingBlockApisDemo apps.
+Click the play button in the DEMO TIME panel in the explorer to start the slide show.
 
-### Pub.Sub CodeTour
+Progress through the slides and demos by clicking the DEMO TIME icon in the status bar or the next step in the DEMO TIME panel in the explorer.
 
-Using the CodeTour panel in the VSCode explorer, start the *5 - Pub/Sub* CodeTour.
+**Demo 1a, 1b, 2**
+![State Management](/.demo/slides/images/dapr-kv-2.png)
 
-### Pub.Sub Demo CodeTour
+**Demo 3**
+![Service Invocation](/.demo/slides/images/dapr-s2s-3.png)
 
-**Pub/sub**
-
-```mermaid
-graph LR
-    A{{AppA}}
-    B{{AppB}}
-    MB[Message Broker]
-    State[(KV Store)]
-    A .-> MB .-> B
-    B --> State
-```
-
-Using the CodeTour panel in the VSCode explorer, start the *6 - Pub/Sub Demo* CodeTour and follow the instructions in the CodeTour to run the apps and use the Dapr Pub/Sub API.
+**Demo 4**
+![Pub/Sub](/.demo/slides/images/dapr-pubsub-3.png)
 
 ### Diagrid Conductor Free
 
