@@ -27,20 +27,6 @@
       ]
     },
     {
-      "title": "Slido Q&A",
-      "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/slido.md"
-        }
-      ]
-    },
-    {
       "title": "What if",
       "description": "",
       "icons": {
