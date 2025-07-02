@@ -4,4 +4,4 @@ dapr init
 
 #docker pull postgres:latest
 #docker rm --force /postgres
-#docker run --name postgres -e POSTGRES_PASSWORD=postgres123 -d postgres -p 5432:5432
+#docker run --name postgres -e POSTGRES_PASSWORD=postgres123 -d -p 5432:5432 postgres

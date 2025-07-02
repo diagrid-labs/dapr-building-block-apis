@@ -122,6 +122,30 @@
       ]
     },
     {
+      "title": "Demo 1b: Run Postgres",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker pull postgres:latest",
+          "terminalId": "docker"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker rm --force /postgres",
+          "terminalId": "docker"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker run --name postgres -e POSTGRES_PASSWORD=postgres123 -d -p 5432:5432 postgres",
+          "terminalId": "docker"
+        }
+      ]
+    },
+    {
       "title": "Demo 1b: Switch state store",
       "icons": {
         "start": "terminal-cmd",
