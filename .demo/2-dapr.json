@@ -19,6 +19,20 @@
       ]
     },
     {
+      "id": "demo-mhd4xcjr-dje3",
+      "title": "Dapr poll",
+      "steps": [
+        {
+          "action": "startEngageTimePoll",
+          "pollId": "8vbcgk"
+        },
+        {
+          "action": "showEngageTimePoll",
+          "pollId": "8vbcgk"
+        }
+      ]
+    },
+    {
       "title": "Developer Platform",
       "description": "",
       "icons": {
@@ -29,6 +43,10 @@
         {
           "action": "openSlide",
           "path": "/.demo/slides/dev-platform.md"
+        },
+        {
+          "action": "closeEngageTimePoll",
+          "pollId": "8vbcgk"
         }
       ]
     },
@@ -129,20 +147,9 @@
           "path": "/.demo/slides/dapr-users.md"
         }
       ]
-    },
-    {
-      "title": "State Management",
-      "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/state-management.md"
-        }
-      ]
     }
-  ]
+  ],
+  "engageTime": {
+    "sessionId": "emkze7"
+  }
 }

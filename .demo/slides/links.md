@@ -7,9 +7,10 @@ layout: two-columns
 
 Use the QR code to:
 
-1. Rate my session ⭐️⭐️⭐️⭐️⭐️ & provide feedback 📝
+1. Rate my session ⭐️⭐️⭐️⭐️⭐️
 2. Access resources 📚
 3. Connect with me! 🤝
+4. Claim the Dapr Community badge!
 
 ![Dapr Community Supporter](.demo/slides/images/dapr_community_supporter_badge_anim.gif)
 

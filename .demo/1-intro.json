@@ -80,6 +80,21 @@
           "path": "/.demo/slides/bio.md"
         }
       ]
+    },
+    {
+      "id": "demo-mhd4rxhv-3hxw",
+      "title": "Join the Engage Time session",
+      "steps": [
+        {
+          "action": "startEngageTimeSession"
+        },
+        {
+          "action": "showEngageTimeSession"
+        }
+      ]
     }
-  ]
+  ],
+  "engageTime": {
+    "sessionId": "emkze7"
+  }
 }
