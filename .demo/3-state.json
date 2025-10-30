@@ -1,0 +1,429 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "3 - State Management",
+  "description": "This presentation covers State Management.",
+  "version": 2,
+  "demos": [
+    {
+      "title": "State Management",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/state-management.md"
+        }
+      ]
+    },
+    {
+      "title": "State Management Overview",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/state-management-1.md"
+        }
+      ]
+    },
+    {
+      "title": "State Management Diagram",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/state-management-2.md"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1: SaveState",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo1",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ProfileService",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "highlight",
+          "path": "/Demo1/ProfileService/Program.cs",
+          "position": 13
+        }
+      ]
+    },
+    {
+      "title": "dapr.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "open",
+          "path": "/Demo1/dapr.yaml"
+        }
+      ]
+    },
+    {
+      "title": "statestore.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "open",
+          "path": "/Demo1/Resources/statestore-redis.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1a: Run",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1a: Call endpoints",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo1/demo1.http",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "title": "Demo 1a: Stop",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "\u0003"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1b: Run Postgres",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker pull postgres:latest",
+          "terminalId": "docker"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker rm --force /postgres",
+          "terminalId": "docker"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker run --name postgres -e POSTGRES_PASSWORD=postgres123 -d -p 5432:5432 postgres",
+          "terminalId": "docker"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1b: Switch state store",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "rename",
+          "path": "/Demo1/Resources/statestore-redis.yaml",
+          "dest": "/Demo1/Resources/statestore-redis.yaml.temp"
+        },
+        {
+          "action": "rename",
+          "path": "/Demo1/Resources/statestore-postgres.yaml.temp",
+          "dest": "/Demo1/Resources/statestore-postgres.yaml"
+        },
+        {
+          "action": "showInfoMessage",
+          "message": "Switched to Postgres"
+        }
+      ]
+    },
+    {
+      "id": "demo-mhd201eb-vfdf",
+      "title": "Postgres statestore.yaml",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo1/Resources/statestore-postgres.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1b: Run",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1b: Call endpoints",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo1/demo1.http",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "title": "Demo 1b: Stop",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "\u0003"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "clear",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "rename",
+          "path": "/Demo1/Resources/statestore-redis.yaml.temp",
+          "dest": "/Demo1/Resources/statestore-redis.yaml"
+        },
+        {
+          "action": "rename",
+          "path": "/Demo1/Resources/statestore-postgres.yaml",
+          "dest": "/Demo1/Resources/statestore-postgres.yaml.temp"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Resiliency",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo2",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "highlight",
+          "path": "/Demo2/ProfileService/Program.cs",
+          "position": 14
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Build",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ProfileService",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Run",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: List Containers",
+      "description": "",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker ps --format '{{.Names}} {{.Status}}'",
+          "terminalId": "docker"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Stop Redis Container",
+      "description": "",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker stop dapr_redis",
+          "terminalId": "docker"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Call endpoint",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo2/demo2.http",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Check dapr log",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "showInfoMessage",
+          "message": "Show dapr-run terminal"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Start Redis Container",
+      "description": "",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker start dapr_redis",
+          "terminalId": "docker"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Check dapr log",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "showInfoMessage",
+          "message": "Check the dapr-run terminal"
+        }
+      ]
+    },
+    {
+      "title": "Demo 2: Stop",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "\u0003",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "clear",
+          "terminalId": "dapr-run"
+        }
+      ]
+    }
+  ]
+}

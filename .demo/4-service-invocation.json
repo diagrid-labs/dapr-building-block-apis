@@ -1,0 +1,170 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "4 - Service Invocation",
+  "description": "This demo covers Service Invocation.",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Service Invocation",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/service-invocation.md"
+        }
+      ]
+    },
+    {
+      "title": "Service Invocation Diagram 1",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/service-invocation-2.md"
+        }
+      ]
+    },
+    {
+      "title": "Service Invocation Diagram 2",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/service-invocation-3.md"
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: ValidationService",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo3/ValidationService/Program.cs",
+          "position": 6
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo3",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ValidationService",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ProfileService",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: ProfileService",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo3/ProfileService/Program.cs",
+          "position": 9
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: dapr.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "open",
+          "path": "/Demo3/dapr.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: Run",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: Call endpoints",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo3/demo3.http",
+          "position": 7
+        }
+      ]
+    },
+    {
+      "title": "Demo 3: Stop",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "\u0003",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "clear",
+          "terminalId": "dapr-run"
+        }
+      ]
+    }
+  ]
+}

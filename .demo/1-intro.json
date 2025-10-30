@@ -1,0 +1,85 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "1 - Intro",
+  "description": "This presentation covers three Dapr APIs: State Management, Service Invocation, and Pub/Sub.",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Intro",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/intro.md"
+        }
+      ]
+    },
+    {
+      "title": "What if",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/what-if.md"
+        }
+      ]
+    },
+    {
+      "title": "SaveState",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "highlight",
+          "path": "/Demo1/ProfileService/Program.cs",
+          "position": "13:16",
+          "highlightWholeLine": true
+        }
+      ]
+    },
+    {
+      "title": "Bio",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/bio.md"
+        }
+      ]
+    }
+  ]
+}

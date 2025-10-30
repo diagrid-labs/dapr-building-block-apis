@@ -1,0 +1,210 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "5 - Pub/Sub",
+  "description": "This demo covers Service Invocation.",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Pub/Sub",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/pub-sub.md"
+        }
+      ]
+    },
+    {
+      "title": "Pub/Sub Overview",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/pub-sub-1.md"
+        }
+      ]
+    },
+    {
+      "title": "Pub/Sub Diagram 1",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/pub-sub-2.md"
+        }
+      ]
+    },
+    {
+      "title": "Pub/Sub Diagram 2",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/pub-sub-3.md"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: ValidationService",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo4/ValidationService/Program.cs",
+          "position": 10
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo4",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ValidationService",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./ProfileService",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: ProfileService",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo4/ProfileService/Program.cs",
+          "position": 9
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: pubsub.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "open",
+          "path": "/Demo4/Resources/pubsub.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: subscription.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "open",
+          "path": "/Demo4/Resources/subscription.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: dapr.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "open",
+          "path": "/Demo4/dapr.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: Run",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: Call endpoints",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo4/demo4.http",
+          "position": 7
+        }
+      ]
+    },
+    {
+      "title": "Demo 4: Stop",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "\u0003",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "clear",
+          "terminalId": "dapr-run"
+        }
+      ]
+    }
+  ]
+}

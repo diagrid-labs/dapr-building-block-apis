@@ -1,0 +1,148 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "2 - Dapr",
+  "description": "This presentation covers the Dapr overview.",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Dapr website",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/website.md"
+        }
+      ]
+    },
+    {
+      "title": "Developer Platform",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dev-platform.md"
+        }
+      ]
+    },
+    {
+      "title": "Swappable Components Local",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-local.md"
+        }
+      ]
+    },
+    {
+      "title": "Swappable Components Azure",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-azure.md"
+        }
+      ]
+    },
+    {
+      "title": "Swappable Components AWS",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-aws.md"
+        }
+      ]
+    },
+    {
+      "title": "Swappable Components GCP",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/swappable-components-gcp.md"
+        }
+      ]
+    },
+    {
+      "title": "Dapr Community",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dapr-community.md"
+        }
+      ]
+    },
+    {
+      "title": "Dapr Contributors",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dapr-contributors.md"
+        }
+      ]
+    },
+    {
+      "title": "Dapr Users",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dapr-users.md"
+        }
+      ]
+    },
+    {
+      "title": "State Management",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/state-management.md"
+        }
+      ]
+    }
+  ]
+}
