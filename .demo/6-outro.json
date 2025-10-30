@@ -5,12 +5,8 @@
   "version": 2,
   "demos": [
     {
-      "title": "Conductor Advisory",
+      "title": "Dapr Recap",
       "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
       "steps": [
         {
           "action": "executeVSCodeCommand",
@@ -22,9 +18,13 @@
         },
         {
           "action": "openSlide",
-          "path": "/.demo/slides/conductor-1.md"
+          "path": "/.demo/slides/dev-platform.md"
         }
-      ]
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
     },
     {
       "title": "Conductor Component Builder",
@@ -55,42 +55,6 @@
       ]
     },
     {
-      "title": "Dapr Recap",
-      "description": "",
-      "steps": [
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.terminal.killAll"
-        },
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.closeSidebar"
-        },
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/dev-platform.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Find Dapr Online",
-      "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/dapr-online.md"
-        }
-      ]
-    },
-    {
       "title": "Dapr University",
       "description": "",
       "icons": {
@@ -105,38 +69,12 @@
       ]
     },
     {
-      "title": "GitHub repo",
-      "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
+      "id": "demo-mhd3yaq0-aerf",
+      "title": "Feedback & resources",
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/gh-repo.md"
-        }
-      ]
-    },
-    {
-      "title": "Collect the Community Badge",
-      "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.terminal.killAll"
-        },
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.closeSidebar"
-        },
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/community-badge.md"
+          "path": ".demo/slides/links.md"
         }
       ]
     }

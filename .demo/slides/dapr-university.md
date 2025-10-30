@@ -1,5 +1,1 @@
----
-theme: default
----
-
-![Dapr University](/.demo/slides/images/dapr-university-qr.png)
+![Dapr University](/.demo/slides/images/dapr-university-101.png)
