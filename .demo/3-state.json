@@ -140,9 +140,8 @@
       },
       "steps": [
         {
-          "action": "executeTerminalCommand",
-          "terminalId": "dapr-run",
-          "command": "\u0003"
+          "action": "sendKeybinding",
+          "keybinding": "ctrl+C"
         }
       ]
     },
@@ -239,9 +238,12 @@
       },
       "steps": [
         {
-          "action": "executeTerminalCommand",
-          "terminalId": "dapr-run",
-          "command": "\u0003"
+          "action" : "focusTerminal",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "sendKeybinding",
+          "keybinding": "ctrl+C"
         },
         {
           "action": "executeTerminalCommand",
@@ -409,9 +411,8 @@
       },
       "steps": [
         {
-          "action": "executeTerminalCommand",
-          "command": "\u0003",
-          "terminalId": "dapr-run"
+          "action": "sendKeybinding",
+          "keybinding": "ctrl+C"
         },
         {
           "action": "executeTerminalCommand",

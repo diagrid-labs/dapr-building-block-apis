@@ -1,0 +1,19 @@
+@host = http://localhost:5005
+@id={{$guid}}
+
+### Start a new workflow
+# @name workflowStartRequest
+POST {{host}}/start
+Content-Type: application/json
+
+{
+    "id" : "{{id}}",
+    "name": "Dapr",
+    "discord": "https://bit.ly/dapr-discord",
+    "bluesky": "https://bsky.app/profile/daprdev.bsky.social",
+    "linkedin": "https://www.linkedin.com/company/daprdev"
+}
+
+### Get workflow status (replace with actual instanceId)
+@instanceId = {{workflowStartRequest.response.body.$.instanceId}}
+GET {{host}}/status/{{instanceId}}

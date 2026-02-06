@@ -190,9 +190,12 @@
       },
       "steps": [
         {
-          "action": "executeTerminalCommand",
-          "command": "\u0003",
+          "action" : "focusTerminal",
           "terminalId": "dapr-run"
+        },
+        {
+          "action": "sendKeybinding",
+          "keybinding": "ctrl+C"
         },
         {
           "action": "executeTerminalCommand",

@@ -1,0 +1,8 @@
+version: 1
+common:
+  resourcesPath: ./Resources
+apps:
+  - appId: workflowservice
+    appDirPath: ./WorkflowService
+    appPort: 5005
+    command: ["dotnet", "run"]
