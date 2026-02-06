@@ -1,11 +1,11 @@
 {
 	"name": ".NET DevContainer",
-	"image": "mcr.microsoft.com/devcontainers/dotnet:1-9.0-bookworm",
-	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker": {},
-		"ghcr.io/devcontainers/features/node:1": {}
+	"build": {
+		"dockerfile": "Dockerfile"
 	},
-
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker": {}
+	},
 	"forwardPorts": [5432, 9411, 5047, 3547, 5049, 3549, 5051, 3551, 5053, 3553, 5055, 3555, 5057, 3557],
 	"postCreateCommand": "bash .devcontainer/install.sh",
 	

@@ -1,0 +1,183 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "6 - Workflow",
+  "description": "This demo covers the Workflow building block.",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Workflow",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/workflow.md"
+        }
+      ]
+    },
+    {
+      "title": "Workflow Overview",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/workflow-1.md"
+        }
+      ]
+    },
+    {
+      "title": "Demo 5: WorkflowService Program.cs",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo5/WorkflowService/Program.cs",
+          "position": 26
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo5",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dotnet build ./WorkflowService",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 5: ProfileWorkflow",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo5/WorkflowService/Workflows/ProfileWorkflow.cs",
+          "position": 7
+        }
+      ]
+    },
+    {
+      "title": "Demo 5: ValidationActivity",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo5/WorkflowService/Activities/ValidationActivity.cs",
+          "position": 7
+        }
+      ]
+    },
+    {
+      "title": "Demo 5: StorageActivity",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo5/WorkflowService/Activities/StorageActivity.cs",
+          "position": "7",
+          "highlightWholeLine": true
+        }
+      ]
+    },
+    {
+      "title": "Demo 5: dapr.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "open",
+          "path": "/Demo5/dapr.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 5: Run Workflow",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "title": "Demo 5: Call endpoints",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo5/demo5.http",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "title": "Demo 5: Stop",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "focusTerminal",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "sendKeybinding",
+          "keybinding": "ctrl+C"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "clear",
+          "terminalId": "dapr-run"
+        }
+      ]
+    }
+  ]
+}
