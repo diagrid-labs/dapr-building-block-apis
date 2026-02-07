@@ -74,6 +74,15 @@
           "path": ".demo/slides/links.md"
         }
       ]
+    },
+    {
+      "id": "scene-mlcjbrq9-gh71",
+      "title": "Reset",
+      "steps": [
+        {
+          "action": "unsetPresentationView"
+        }
+      ]
     }
   ],
   "engageTime": {

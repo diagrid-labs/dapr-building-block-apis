@@ -15,5 +15,6 @@
         "tabs",
         "sideBar",
         "panel"
-    ]
+    ],
+    "workbench.editor.showTabs": "single"
 }
