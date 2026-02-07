@@ -9,12 +9,7 @@
       "description": "",
       "steps": [
         {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.terminal.killAll"
-        },
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.closeSidebar"
+          "action": "setPresentationView"
         },
         {
           "action": "openSlide",
@@ -80,5 +75,8 @@
         }
       ]
     }
-  ]
+  ],
+  "engageTime": {
+    "sessionId": "0voj2s"
+  }
 }

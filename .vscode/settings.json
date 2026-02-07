@@ -8,5 +8,12 @@
         " ",
         "@",
         "."
+    ],
+    "demoTime.timer": 35,
+    "demoTime.nextActionBehaviour": "currentPosition",
+    "demoTime.presentationViewToggles": [
+        "tabs",
+        "sideBar",
+        "panel"
     ]
 }

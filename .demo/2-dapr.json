@@ -13,6 +13,9 @@
       },
       "steps": [
         {
+          "action": "setPresentationView"
+        },
+        {
           "action": "openSlide",
           "path": "/.demo/slides/website.md"
         }
@@ -150,6 +153,6 @@
     }
   ],
   "engageTime": {
-    "sessionId": "emkze7"
+    "sessionId": "0voj2s"
   }
 }

@@ -13,6 +13,9 @@
       },
       "steps": [
         {
+          "action": "setPresentationView"
+        },
+        {
           "action": "openSlide",
           "path": "/.demo/slides/state-management.md"
         }
@@ -238,7 +241,7 @@
       },
       "steps": [
         {
-          "action" : "focusTerminal",
+          "action": "focusTerminal",
           "terminalId": "dapr-run"
         },
         {
@@ -426,5 +429,8 @@
         }
       ]
     }
-  ]
+  ],
+  "engageTime": {
+    "sessionId": "0voj2s"
+  }
 }

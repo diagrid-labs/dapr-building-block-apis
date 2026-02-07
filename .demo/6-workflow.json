@@ -13,12 +13,7 @@
       },
       "steps": [
         {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.terminal.killAll"
-        },
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.closeSidebar"
+          "action": "setPresentationView"
         },
         {
           "action": "openSlide",
@@ -37,6 +32,20 @@
         {
           "action": "openSlide",
           "path": "/.demo/slides/workflow-1.md"
+        }
+      ]
+    },
+    {
+      "title": "Workflow Communication",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/workflow-2.md"
         }
       ]
     },
@@ -179,5 +188,8 @@
         }
       ]
     }
-  ]
+  ],
+  "engageTime": {
+    "sessionId": "0voj2s"
+  }
 }

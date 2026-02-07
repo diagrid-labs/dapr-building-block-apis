@@ -13,12 +13,7 @@
       },
       "steps": [
         {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.terminal.killAll"
-        },
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.closeSidebar"
+          "action": "setPresentationView"
         },
         {
           "action": "openSlide",
@@ -150,7 +145,7 @@
       },
       "steps": [
         {
-          "action" : "focusTerminal",
+          "action": "focusTerminal",
           "terminalId": "dapr-run"
         },
         {
@@ -169,5 +164,8 @@
         }
       ]
     }
-  ]
+  ],
+  "engageTime": {
+    "sessionId": "0voj2s"
+  }
 }

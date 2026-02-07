@@ -17,12 +17,21 @@
           "command": "workbench.action.terminal.killAll"
         },
         {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.closeSidebar"
+          "action": "setPresentationView"
         },
         {
           "action": "openSlide",
           "path": "/.demo/slides/intro.md"
+        }
+      ]
+    },
+    {
+      "id": "scene-mlcibp0o-g163",
+      "title": "Start timer",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.startCountdown"
         }
       ]
     },
@@ -95,6 +104,6 @@
     }
   ],
   "engageTime": {
-    "sessionId": "emkze7"
+    "sessionId": "0voj2s"
   }
 }
