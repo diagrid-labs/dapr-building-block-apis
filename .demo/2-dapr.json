@@ -27,11 +27,11 @@
       "steps": [
         {
           "action": "startEngageTimePoll",
-          "pollId": "8vbcgk"
+          "pollId": "l5csr8"
         },
         {
           "action": "showEngageTimePoll",
-          "pollId": "8vbcgk"
+          "pollId": "l5csr8"
         }
       ]
     },
@@ -119,9 +119,11 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/dapr-community.md"
+          "path": "/.demo/slides/dapr-community.md",
+          "disabled": true
         }
-      ]
+      ],
+      "disabled": true
     },
     {
       "title": "Dapr Contributors",
@@ -133,9 +135,11 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/dapr-contributors.md"
+          "path": "/.demo/slides/dapr-contributors.md",
+          "disabled": false
         }
-      ]
+      ],
+      "disabled": true
     },
     {
       "title": "Dapr Users",

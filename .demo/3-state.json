@@ -143,6 +143,10 @@
       },
       "steps": [
         {
+          "action": "focusTerminal",
+          "terminalId": "dapr-run"
+        },
+        {
           "action": "sendKeybinding",
           "keybinding": "ctrl+C"
         }

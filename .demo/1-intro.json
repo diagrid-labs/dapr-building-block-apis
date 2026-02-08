@@ -36,39 +36,6 @@
       ]
     },
     {
-      "title": "What if",
-      "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/what-if.md"
-        }
-      ]
-    },
-    {
-      "title": "SaveState",
-      "icons": {
-        "start": "code",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.focusSideBar"
-        },
-        {
-          "action": "highlight",
-          "path": "/Demo1/ProfileService/Program.cs",
-          "position": "13:16",
-          "highlightWholeLine": true
-        }
-      ]
-    },
-    {
       "title": "Bio",
       "description": "",
       "icons": {
@@ -87,6 +54,36 @@
         {
           "action": "openSlide",
           "path": "/.demo/slides/bio.md"
+        }
+      ]
+    },
+    {
+      "title": "What if",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/what-if.md"
+        }
+      ],
+      "disabled": true
+    },
+    {
+      "title": "SaveState",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo1/ProfileService/Program.cs",
+          "position": "13:16",
+          "highlightWholeLine": true
         }
       ]
     },

@@ -134,7 +134,7 @@
       ]
     },
     {
-      "title": "Demo 5: Run Workflow",
+      "title": "Demo 5: Run Workflow App",
       "icons": {
         "start": "terminal-cmd",
         "end": "pass-filled"
@@ -144,6 +144,18 @@
           "action": "executeTerminalCommand",
           "command": "dapr run -f .",
           "terminalId": "dapr-run"
+        }
+      ]
+    },
+    {
+      "id": "scene-mldt8ezf-jqmr",
+      "title": "Demo 5: Start Diagrid Dev Container",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker run -p 8080:8080 ghcr.io/diagridio/diagrid-dashboard:latest",
+          "terminalId": "diagrid-dev-container",
+          "insertTypingSpeed": 50
         }
       ]
     },
