@@ -421,6 +421,20 @@
           "terminalId": "dapr-run"
         }
       ]
+    },
+    {
+      "title": "Demo 2: Resilliency.yaml",
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/Demo2/Resources/resiliency.yaml",
+          "position": 3
+        }
+      ]
     }
   ],
   "engageTime": {
