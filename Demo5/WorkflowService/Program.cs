@@ -22,7 +22,6 @@ builder.Services.AddDaprWorkflow(options =>
 
 var app = builder.Build();
 
-// POST /start - Schedule workflow and return instance ID
 app.MapPost("/start", async (
     SocialProfileDetails profileDetails,
     DaprWorkflowClient workflowClient) =>
@@ -37,7 +36,6 @@ app.MapPost("/start", async (
     return Results.Accepted(value: new { instanceId });
 });
 
-// GET /status/{instanceId} - Get workflow status
 app.MapGet("/status/{instanceId}", async (
     string instanceId,
     DaprWorkflowClient workflowClient) =>

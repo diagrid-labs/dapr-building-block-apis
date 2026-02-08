@@ -18,6 +18,10 @@ public class StorageActivity : WorkflowActivity<SocialProfileDetails, StorageRes
         WorkflowActivityContext context, 
         SocialProfileDetails input)
     {
+        //  😱 Simulate some processing time so I have enough time to stop this application 
+        // to demonstrate resilience of stateful workflows.
+        Thread.Sleep(7000);
+        
         await _daprClient.SaveStateAsync(
             StateStoreComponentName,
             input.Id,

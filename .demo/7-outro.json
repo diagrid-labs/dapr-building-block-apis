@@ -22,36 +22,6 @@
       }
     },
     {
-      "title": "Conductor Component Builder",
-      "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/conductor-2.md"
-        }
-      ],
-      "disabled": true
-    },
-    {
-      "title": "Conductor Resiliency Builder",
-      "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/conductor-3.md"
-        }
-      ],
-      "disabled": true
-    },
-    {
       "title": "Dapr University",
       "description": "",
       "icons": {

@@ -50,6 +50,20 @@
       ]
     },
     {
+      "title": "Demo 5: Workflow Diagram",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "markdownPreview",
+          "path": "/.demo/slides/workflow-3.md"
+        }
+      ]
+    },
+    {
       "title": "Demo 5: WorkflowService Program.cs",
       "icons": {
         "start": "code",
@@ -59,7 +73,7 @@
         {
           "action": "highlight",
           "path": "/Demo5/WorkflowService/Program.cs",
-          "position": 26
+          "position": 25
         },
         {
           "action": "executeTerminalCommand",
@@ -124,10 +138,6 @@
       },
       "steps": [
         {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.focusSideBar"
-        },
-        {
           "action": "open",
           "path": "/Demo5/dapr.yaml"
         }
@@ -170,6 +180,37 @@
           "action": "highlight",
           "path": "/Demo5/demo5.http",
           "position": 6
+        }
+      ]
+    },
+    {
+      "title": "Demo 5: Stop the app",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "focusTerminal",
+          "terminalId": "dapr-run"
+        },
+        {
+          "action": "sendKeybinding",
+          "keybinding": "ctrl+C"
+        }
+      ]
+    },
+    {
+      "title": "Demo 5: Restart the app",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run"
         }
       ]
     },
