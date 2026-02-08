@@ -78,7 +78,7 @@
       ]
     },
     {
-      "title": "dapr.yaml",
+      "title": "Demo 1: dapr.yaml",
       "icons": {
         "start": "code",
         "end": "pass-filled"
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "title": "statestore.yaml",
+      "title": "Demo 1: statestore.yaml",
       "icons": {
         "start": "code",
         "end": "pass-filled"
@@ -196,13 +196,7 @@
         {
           "action": "showInfoMessage",
           "message": "Switched to Postgres"
-        }
-      ]
-    },
-    {
-      "id": "demo-mhd201eb-vfdf",
-      "title": "Postgres statestore.yaml",
-      "steps": [
+        },
         {
           "action": "open",
           "path": "Demo1/Resources/statestore-postgres.yaml"
@@ -291,23 +285,14 @@
           "terminalId": "dapr-run"
         },
         {
-          "action": "highlight",
-          "path": "/Demo2/ProfileService/Program.cs",
-          "position": 14
-        }
-      ]
-    },
-    {
-      "title": "Demo 2: Build",
-      "icons": {
-        "start": "terminal-cmd",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
           "action": "executeTerminalCommand",
           "command": "dotnet build ./ProfileService",
           "terminalId": "dapr-run"
+        },
+        {
+          "action": "highlight",
+          "path": "/Demo2/ProfileService/Program.cs",
+          "position": 14
         }
       ]
     },
@@ -341,7 +326,7 @@
       ]
     },
     {
-      "title": "Demo 2: Stop Redis Container",
+      "title": "Demo 2: Stop Postgres Container",
       "description": "",
       "icons": {
         "start": "terminal-cmd",
@@ -350,7 +335,7 @@
       "steps": [
         {
           "action": "executeTerminalCommand",
-          "command": "docker stop dapr_redis",
+          "command": "docker stop postgres",
           "terminalId": "docker"
         }
       ]
@@ -377,13 +362,13 @@
       },
       "steps": [
         {
-          "action": "showInfoMessage",
-          "message": "Show dapr-run terminal"
+          "action": "focusTerminal",
+          "message": "dapr-run"
         }
       ]
     },
     {
-      "title": "Demo 2: Start Redis Container",
+      "title": "Demo 2: Start Postgres Container",
       "description": "",
       "icons": {
         "start": "terminal-cmd",
@@ -392,7 +377,7 @@
       "steps": [
         {
           "action": "executeTerminalCommand",
-          "command": "docker start dapr_redis",
+          "command": "docker start postgres",
           "terminalId": "docker"
         }
       ]
@@ -405,8 +390,8 @@
       },
       "steps": [
         {
-          "action": "showInfoMessage",
-          "message": "Check the dapr-run terminal"
+          "action": "focusTerminal",
+          "message": "dapr-run"
         }
       ]
     },
@@ -417,6 +402,10 @@
         "end": "pass-filled"
       },
       "steps": [
+        {
+          "action": "focusTerminal",
+          "terminalId": "dapr-run"
+        },
         {
           "action": "sendKeybinding",
           "keybinding": "ctrl+C"
