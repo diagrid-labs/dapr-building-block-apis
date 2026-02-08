@@ -26,7 +26,7 @@ app.MapPost("/start", async (
     SocialProfileDetails profileDetails,
     DaprWorkflowClient workflowClient) =>
 {
-    var instanceId = Guid.NewGuid().ToString();
+    var instanceId = $"PROF-{Guid.NewGuid()}";
     
     await workflowClient.ScheduleNewWorkflowAsync(
         name: nameof(ProfileWorkflow),

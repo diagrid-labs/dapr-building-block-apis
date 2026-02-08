@@ -1,6 +1,8 @@
 version: 1
 common:
   resourcesPath: ./Resources
+  appLogDestination: console
+  daprdLogDestination: console
 apps:
   - appId: workflowservice
     appDirPath: ./WorkflowService
