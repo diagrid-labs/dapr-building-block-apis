@@ -57,10 +57,6 @@
       },
       "steps": [
         {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.focusSideBar"
-        },
-        {
           "action": "executeTerminalCommand",
           "command": "cd Demo1",
           "terminalId": "dapr-run"
@@ -78,23 +74,6 @@
       ]
     },
     {
-      "title": "Demo 1: dapr.yaml",
-      "icons": {
-        "start": "code",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.focusSideBar"
-        },
-        {
-          "action": "open",
-          "path": "/Demo1/dapr.yaml"
-        }
-      ]
-    },
-    {
       "title": "Demo 1: statestore.yaml",
       "icons": {
         "start": "code",
@@ -104,6 +83,19 @@
         {
           "action": "open",
           "path": "/Demo1/Resources/statestore-redis.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo 1: dapr.yaml",
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "open",
+          "path": "/Demo1/dapr.yaml"
         }
       ]
     },
@@ -275,10 +267,6 @@
         "end": "pass-filled"
       },
       "steps": [
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.focusSideBar"
-        },
         {
           "action": "executeTerminalCommand",
           "command": "cd Demo2",
