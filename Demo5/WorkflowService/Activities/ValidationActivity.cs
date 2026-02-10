@@ -19,7 +19,8 @@ public class ValidationActivity : WorkflowActivity<SocialProfileDetails, Validat
         WorkflowActivityContext context, 
         SocialProfileDetails input)
     {
-        //var validator = new SocialProfileDetailsValidator();
+        _logger.LogInformation("Validating profile {ProfileId}.", input.Id);
+        
         var result = _validator.Validate(input);
 
         return Task.FromResult(new ValidationResult(
