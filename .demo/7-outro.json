@@ -36,6 +36,16 @@
       ]
     },
     {
+      "id": "scene-mlh47du1-5ip7",
+      "title": "Diagrid Catalyst",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/catalyst.md"
+        }
+      ]
+    },
+    {
       "id": "demo-mhd3yaq0-aerf",
       "title": "Feedback & resources",
       "steps": [
