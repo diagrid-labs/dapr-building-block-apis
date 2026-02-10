@@ -82,8 +82,9 @@
         {
           "action": "highlight",
           "path": "/Demo1/ProfileService/Program.cs",
-          "position": "13:16",
-          "highlightWholeLine": true
+          "position": "7:22",
+          "highlightWholeLine": true,
+          "highlightBlur": 2
         }
       ]
     },

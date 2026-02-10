@@ -8,16 +8,20 @@ public class StorageActivity : WorkflowActivity<SocialProfileDetails, StorageRes
 {
     private const string StateStoreComponentName = "mystatestore";
     private readonly DaprClient _daprClient;
+    private readonly ILogger<StorageActivity> _logger;
 
-    public StorageActivity(DaprClient daprClient)
+    public StorageActivity(DaprClient daprClient, ILogger<StorageActivity> logger)
     {
         _daprClient = daprClient;
+        _logger = logger;
     }
 
     public override async Task<StorageResult> RunAsync(
         WorkflowActivityContext context, 
         SocialProfileDetails input)
     {
+        _logger.LogInformation("Saving profile {ProfileId} to state store.", input.Id);
+
         //  😱 Simulate some processing time so I have enough time to stop this application 
         // to demonstrate resilience of stateful workflows.
         Thread.Sleep(7000);

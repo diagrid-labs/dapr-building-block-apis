@@ -2,11 +2,13 @@ using Dapr.Workflow;
 using WorkflowService.Activities;
 using WorkflowService.Models;
 using WorkflowService.Workflows;
+using WorkflowService.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Register Dapr Client
 builder.Services.AddDaprClient();
+builder.Services.AddSingleton<SocialProfileDetailsValidator>();
 
 // Register Dapr Workflow
 builder.Services.AddDaprWorkflow(options =>

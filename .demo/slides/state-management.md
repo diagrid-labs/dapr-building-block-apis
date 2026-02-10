@@ -3,4 +3,4 @@ theme: default
 layout: section
 ---
 
-# Dapr State Management API
+# State Management API
