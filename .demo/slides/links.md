@@ -5,8 +5,6 @@ layout: two-columns
 
 # Thank you!
 
-Use the QR code to:
-
 1. Rate my session ⭐️⭐️⭐️⭐️⭐️
 2. Access resources 📚
 3. Connect with me! 🤝
