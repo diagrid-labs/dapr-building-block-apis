@@ -50,7 +50,7 @@
       ]
     },
     {
-      "title": "Demo 5: Workflow Diagram",
+      "title": "Workflow replay",
       "description": "",
       "icons": {
         "start": "vm",
@@ -58,8 +58,18 @@
       },
       "steps": [
         {
-          "action": "markdownPreview",
+          "action": "openSlide",
           "path": "/.demo/slides/workflow-3.md"
+        }
+      ]
+    },
+    {
+      "id": "scene-mli0g157-uhhq",
+      "title": "Demo 5: Workflow diagram",
+      "steps": [
+        {
+          "action": "markdownPreview",
+          "path": ".demo/slides/workflow-4.md"
         }
       ]
     },
@@ -73,7 +83,8 @@
         {
           "action": "highlight",
           "path": "/Demo5/WorkflowService/Program.cs",
-          "position": 25
+          "position": "27",
+          "highlightWholeLine": true
         },
         {
           "action": "executeTerminalCommand",
