@@ -9,23 +9,25 @@ This repo contains Dapr applications to demonstrate several Dapr building block 
 > - Service Invocation API
 > - Pub/Sub API
 > - Resiliency policies
+> - Dapr Workflow
 
 ## Table of Contents
 
 - [Prequisites](#prerequisites)
 - [Running the demos with DemoTime](#running-the-demos-with-demotime)
-- [Diagrid Conductor](#diagrid-conductor)
+- [Diagrid Dev Dashboard](#diagrid-dev-dashboard)
+- [Diagrid Catalyst](#diagrid-catalyst)
 - [Resources](#resources)
 
 ## Prerequisites
 
 Ensure you have these installed on your machine:
 
-- [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [.NET 9](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [VSCode](https://code.visualstudio.com/) - Although other IDEs can be used to view the code, some VSCode specific extensions are used (such as [DemoTime](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-demo-time)) to help guide you through the slides and the codebase.
-- For *Demo 1b* a Postgres database is required that can be installed via docker:
+- For *Demo 1b* and *Demo 2* a Postgres database is required that can be installed via docker:
 
     ```bash
     docker pull postgres:latest
@@ -37,7 +39,7 @@ Ensure you have these installed on your machine:
 
 ## Running the demos with DemoTime
 
-Click the play button in the DEMO TIME panel in the explorer to start the slide show.
+Click the play button in the DEMO TIME panel in the explorer to start the slides and demos.
 
 Progress through the slides and demos by clicking the DEMO TIME icon in the status bar or the next step in the DEMO TIME panel in the explorer.
 
@@ -50,17 +52,22 @@ Progress through the slides and demos by clicking the DEMO TIME icon in the stat
 **Demo 4**
 ![Pub/Sub](/.demo/slides/images/dapr-pubsub-3.png)
 
-### Diagrid Conductor
+**Demo 5**
+![Workflow](/.demo/slides/images/dapr-workflow-engine.png)
 
-[Diagrid Conductor](https://www.diagrid.io/conductor) is a free tool developers can use to visualize, troubleshoot, and optimize Dapr workloads on Kubernetes. It includes an Advisor that provides recommendations on how to improve the reliability of your Dapr applications.
+### Diagrid Dev Dashboard
 
-![Conductor Advisor](.demo/slides/images/conductor-advisories.jpeg)
+The [Diagrid Dev Dashboard](https://www.diagrid.io/blog/improving-the-local-dapr-workflow-experience-diagrid-dashboard) is used during local development of Dapr workflow applications. It shows the workflow state, and the full execution history of the workflow instances.
 
-Conductor also comes with two builders to generate Dapr *component files* and *resiliency policies* so you don't have to figure out the correct yaml schema yourself.
+![Diagrid Dev Dashboard](/.demo/slides/images/diagrid-dev-dashboard-1.jpeg)
 
-![Conductor Component Builder](.demo/slides/images/conductor-component-builder.jpeg)
+![Diagrid Dev Dashboard](/.demo/slides/images/diagrid-dev-dashboard-2.jpeg)
 
-![Conductor Resiliency Builder](.demo/slides/images/conductor-resiliency-builder.jpeg)
+### Diagrid Catalyst
+
+If you're running Dapr Workflow applications in production check out [Diagrid Catalyst](https://www.diagrid.io/catalyst), the enterprise platform for Dapr Workflow and Agentic AI.
+
+![Diagrid Catalyst](/.demo/slides/images/diagrid-catalyst.png)
 
 ## Resources
 
@@ -69,4 +76,4 @@ Conductor also comes with two builders to generate Dapr *component files* and *r
 - [Dapr Docs: State Management](https://docs.dapr.io/developing-applications/building-blocks/state-management/)
 - [Dapr Docs: Pub/Sub](https://docs.dapr.io/developing-applications/building-blocks/pubsub/)
 - [Dapr Docs: Resiliency](https://docs.dapr.io/operations/resiliency/)
-- [Diagrid Conductor](https://www.diagrid.io/conductor)
+- [Dapr Docs: Workflow](https://docs.dapr.io/developing-applications/building-blocks/workflow/workflow-overview/)
