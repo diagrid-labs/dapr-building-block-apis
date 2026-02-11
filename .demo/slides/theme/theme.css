@@ -311,8 +311,8 @@
     }
 
     h1 {
-      color: var(--demotime-two-columns-heading-color);
-      background: var(--demotime-two-columns-heading-background);
+      color: var(--color-background);
+      background: var(--color-primary);
     }
   }
 }

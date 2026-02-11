@@ -22,6 +22,20 @@
       ]
     },
     {
+      "title": "Dapr Users",
+      "description": "",
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/dapr-users.md"
+        }
+      ]
+    },
+    {
       "id": "demo-mhd4xcjr-dje3",
       "title": "Dapr poll",
       "steps": [
@@ -50,20 +64,6 @@
         {
           "action": "closeEngageTimePoll",
           "pollId": "8vbcgk"
-        }
-      ]
-    },
-    {
-      "title": "Dapr Users",
-      "description": "",
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      },
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/dapr-users.md"
         }
       ]
     },
