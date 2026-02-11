@@ -23,7 +23,7 @@ This repo contains Dapr applications to demonstrate several Dapr building block 
 
 Ensure you have these installed on your machine:
 
-- [.NET 9](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [.NET 9](https://dotnet.microsoft.com/download/dotnet/9.0)
 - [Dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [VSCode](https://code.visualstudio.com/) - Although other IDEs can be used to view the code, some VSCode specific extensions are used (such as [DemoTime](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-demo-time)) to help guide you through the slides and the codebase.
