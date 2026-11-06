@@ -2,4 +2,4 @@
 theme: default
 ---
 
-![Catalyst](.demo/slides/images/diagrid-catalyst.png)
+![Diagrid](.demo/slides/images/diagrid-catalyst.png)

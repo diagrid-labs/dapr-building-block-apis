@@ -16,7 +16,7 @@ This repo contains Dapr applications to demonstrate several Dapr building block 
 - [Prequisites](#prerequisites)
 - [Running the demos with DemoTime](#running-the-demos-with-demotime)
 - [Diagrid Dev Dashboard](#diagrid-dev-dashboard)
-- [Diagrid Catalyst](#diagrid-catalyst)
+- [Diagrid](#diagrid)
 - [Resources](#resources)
 
 ## Prerequisites
@@ -63,11 +63,11 @@ The [Diagrid Dev Dashboard](https://www.diagrid.io/blog/improving-the-local-dapr
 
 ![Diagrid Dev Dashboard](/.demo/slides/images/diagrid-dev-dashboard-2.jpeg)
 
-### Diagrid Catalyst
+### Diagrid
 
-If you're running Dapr Workflow applications in production check out [Diagrid Catalyst](https://www.diagrid.io/catalyst), the enterprise platform for Dapr Workflow and Agentic AI.
+If you're running Dapr Workflow applications in production check out [Diagrid](https://www.diagrid.io/catalyst), the enterprise platform for Dapr Workflow and Agentic AI.
 
-![Diagrid Catalyst](/.demo/slides/images/diagrid-catalyst.png)
+![Diagrid](/.demo/slides/images/diagrid-catalyst.png)
 
 ## Resources
 
